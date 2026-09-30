@@ -32,11 +32,11 @@ for ip in danh_sach_ip_loi :
 #Bây giờ ta đã có thông tin các IP lỗi 403 và số lần bị lỗi
 
 print ("Thống kê truy cập theo IP :") #print trong Python đã tự động xuống dòng rồi
-print (thong_ke_ip)
+print (thong_ke_ip) #In 1 cái từ điển, bao gồm key và value
 print ("\n")
 print ("Danh sách IP bị lỗi 403 :")
 for ip in ma_loi_ip :
-    print(f" - IP {ip} : Bị lỗi 403 tổng cộng {ma_loi_ip[]} lần") 
+    print (f"IP {ip} : Bị lỗi 403 tổng cộng {ma_loi_ip[ip]} lần") 
 
 #Cách dùng hàm items() cho dict, nó tự chia key và value ra, gán vào biến ta khai báo    
 #for ip, so_lan in ma_loi_ip.items():
